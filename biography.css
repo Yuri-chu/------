@@ -1,0 +1,170 @@
+@font-face
+     {
+    font-family: 'KyivType';
+        src: url("fonts/KyivType_06-04-2009/KyivType-NoVariable/WEB/KyivTypeTitling-Regular3.woff") format("woff");
+      }
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.body{
+    scroll-behavior: smooth;
+    -webkit-transition: all 1s ease;;
+    -moz-transition: all 1s ease;;
+    -o-transition: all 1s ease;;
+    transition: all 1s ease;
+}
+/*  хедер   */
+.header{
+    color: #fff;
+    font-family: 'KyivType';
+    background: url(img/drive-dark.png) no-repeat center;
+    background-size: cover;
+}
+.svg_logo{
+    margin-top: 3%;
+    width: 4%;
+}
+.parent{
+    font-size: 7.01vw;
+    width: 40%;
+    padding: 10% 0 28% 0;
+    line-height: 1.7;
+    margin-right: 7%;
+    opacity: 0;
+}
+/* full name */
+.tomas-container{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000000;
+    background: url(img/invisible.png) no-repeat center;
+    background-size: cover;
+}
+.tomas-text{
+    margin-left: 8vw;
+}
+.tomas-text h2{
+    font-weight: 400;
+    font-size: 4vw ;
+    margin-top: 12vw;
+}
+.tomas-text p{
+    margin-top: 4vw;
+    width: 43vw;
+    font-size: 2vw ;
+    margin-bottom: 15vw;
+}
+/*  карусель   */
+.carousel{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: url(img/fon-dark.png) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+    color: #fff;
+}
+.carousel-inner{
+    padding: 12% 10% 0 10%;
+    
+}
+.young{
+    background: url(img/young.jpg) no-repeat center;
+    background-size: cover;
+    height: 30vw;
+}
+.old{
+    background: url(img/old.jpg) no-repeat center;
+    background-size: cover;
+    height: 35vw;
+}
+.puberty{
+    background: url(img/puberty.jpg) no-repeat center;
+    background-size: cover;
+    height: 35vw;
+}
+
+.main-title{
+    margin-top: 10px;
+    font-size: 2.7vw;
+}
+.main-text{
+    font-size: 1.3vw;
+}  
+
+
+/*  нижние блоки  */
+.menu{
+    color: #fff;
+    font-family: 'KyivType';
+}
+.element-animation { 
+    /* Скрывает элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+.menu .element-animation{
+    opacity: 0;
+    transform: translateY(10px);
+}
+.menu .element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+.filmography{
+    background:  url(img/lf.jpg) no-repeat center;
+    background-size: cover;
+}
+.news{
+    background:  url(img/news.jpg) no-repeat center;
+    background-size: cover;
+}
+.string{
+    height: 2px;
+    width: 25%;
+    background: #fff;
+}
+
+.filmography:hover{
+    background:  url(img/lf.jpg) no-repeat center;
+    background-size: cover;
+}
+.news:hover{
+    background:  url(img/news.jpg) no-repeat center;
+    background-size: cover;
+}
+.menu a{
+    padding: 13% 0 13% 0;
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+}
+.menu a:hover{
+    transition: 1s;
+    box-shadow: 0 0 10px #000000;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.menu a:hover .string{
+    transition: 1s;
+    width: 35%;
+}
+
+/*  футер   */
+
+footer{
+    padding: 4vw;
+}
+ .icon{
+    width: 2.5vw;
+}
+@media (max-width: 580px){
+    .icon{
+        width: 4vw;
+    }
+      }
