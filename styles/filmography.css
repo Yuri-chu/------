@@ -1,0 +1,193 @@
+@font-face
+     {
+    font-family: 'KyivType';
+        src: url("../fonts/KyivType_06-04-2009/KyivType-NoVariable/WEB/KyivTypeTitling-Regular3.woff") format("woff");
+      }
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.body{
+    scroll-behavior: smooth;
+    -webkit-transition: all 1s ease;;
+    -moz-transition: all 1s ease;;
+    -o-transition: all 1s ease;;
+    transition: all 1s ease;
+}
+/* бошка */ 
+.header{
+    font-family: 'KyivType';
+    color: #fff;
+    background: url(../img/lf-dark.png) no-repeat center;
+    background-size: cover;
+}
+.svg_logo{
+    margin-top: 3%;
+    width: 4%;
+}
+.parent{
+    font-size: 7.01vw;
+    padding: 15% 0 28% 0;
+    opacity: 0;
+}
+/* иконки */ 
+.icons{
+    padding: 12vw 0 12vw 0;
+}
+lord-icon{
+    width: 20vw;
+    height: 20vw;
+}
+.icons h2{
+    margin-bottom: 5vw;
+    font-size: 5vw;
+    font-weight: 400;
+}
+.icons p{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+/* слайдер */ 
+.carousel{
+    font-family: 'KyivType';
+}
+.carousel-item{
+    height: 57vw;
+    background: url(../img/blade-dark.png) no-repeat center;
+    background-size: cover;
+}
+.carousel-item:nth-child(2){
+    height: 57vw;
+    background: url(../img/lala-dark.png) no-repeat center;
+    background-size: cover;
+}
+.carousel-item:nth-child(3){
+    height: 57vw;
+    background: url(../img/diary-dark.png) no-repeat center;
+    background-size: cover;
+}
+.carousel-item:nth-child(4){
+    height: 57vw;
+    background: url(../img/scorp-dark.png) no-repeat center;
+    background-size: cover;
+}
+.carousel-item:nth-child(5){
+    height: 57vw;
+    background: url(../img/place-dark.png) no-repeat center;
+    background-size: cover;
+}
+.carousel-caption{
+    margin-bottom: 13vw;
+}
+.carousel-caption h2{
+    font-size: 6.4vw;
+}
+.carousel-caption h3{
+    font-size: 2.4vw;
+}
+.carousel-caption p{
+    font-size: 1.6vw;
+}
+/* нижнее меню */ 
+.menu{
+    font-family: 'KyivType';
+    color: #fff;
+}
+.element-animation { 
+    /* Скрывает элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+.menu .element-animation{
+    opacity: 0;
+    transform: translateY(10px);
+}
+.menu .element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+.biography{
+    background:  url(../img/drive.jpg) no-repeat center;
+    background-size: cover;
+}
+.news{
+    background:  url(../img/news.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.string{
+    height: 2px;
+    width: 25%;
+    background: #fff;
+}
+
+.biography:hover{
+    background: url(../img/drive.jpg) no-repeat center;
+    background-size: cover;
+}
+.news:hover{
+    background: url(../img/news.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.menu a{
+    padding: 13% 0 13% 0;
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+}
+.menu a:hover{
+    transition: 1s;
+    box-shadow: 0 0 10px #000000;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.menu a:hover .string{
+    transition: 1s;
+    width: 35%;
+}
+/* ножка */
+footer{
+    padding: 4vw;
+}
+ .icon{
+    width: 2.5vw;
+}
+@media (max-width: 767px){
+    .carousel-caption{
+        margin: 0 0 8vw 0;
+    }
+
+}
+@media (max-width: 580px){
+    .carousel-caption{
+        margin: 0 0 3vw 0;
+    }
+    .string{
+        height: 1px;
+        width: 22%;
+        background: #fff;
+    }
+    .menu a:hover .string{
+        height: 1px;
+        transition: 1s;
+        width: 35%;
+    }
+    div.icon-block{
+        width: 35vw;
+    }
+    .menu-title{
+        font-size: 4vw;
+    }
+    .icon{
+        width: 4vw;
+    }
+      }

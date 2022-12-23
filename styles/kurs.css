@@ -1,0 +1,116 @@
+@font-face
+     {
+    font-family: 'KyivType';
+        src: url("../fonts/KyivType_06-04-2009/KyivType-NoVariable/WEB/KyivTypeTitling-Regular3.woff") format("woff");
+      }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'KyivType';
+    vertical-align: baseline;
+    color: #fff;
+}
+.body{
+    scroll-behavior: smooth;
+    -webkit-transition: all 1s ease;;
+    -moz-transition: all 1s ease;;
+    -o-transition: all 1s ease;;
+    transition: all 1s ease;
+}
+.header{
+    background: url(../img/bluegos-dark.jpg) no-repeat center;
+    background-size: cover;
+}
+.svg_logo{
+    margin-top: 3%;
+ width: 4%;
+}
+.parent{
+    font-size: 7.01vw;
+    width: 40%;
+    padding: 0 0 28% 0;
+    line-height: 1.7;
+    margin-right: 7%;
+    opacity: 0;
+}
+.element-animation { 
+    /* Скрывает элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+.main .element-animation{
+    opacity: 0;
+    transform: translateY(10px);
+}
+.main .element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+.biography{
+    background:  url(../img/drive.jpg) no-repeat center;
+    background-size: cover;
+}
+.filmography{
+    background:  url(../img/lf.jpg) no-repeat center;
+    background-size: cover;
+}
+.news{
+    background:  url(../img/news.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.main .row{
+    background: url(../img/newsl-dark2.png) no-repeat center;
+    background-size: cover;
+}
+.string{
+    height: 2px;
+    width: 25%;
+    background: #fff;
+}
+.biography:hover{
+    background: url(../img/drive.jpg) no-repeat center;
+    background-size: cover;
+}
+.filmography:hover{
+    background:  url(../img/lf.jpg) no-repeat center;
+    background-size: cover;
+}
+.news:hover{
+    background:  url(../img/news.jpg) no-repeat center;
+    background-size: cover;
+}
+.main a{
+    padding: 13% 0 13% 0;
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+}
+.main a:hover{
+    transition: 1s;
+    box-shadow: 0 0 10px #000000;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.main a:hover .string{
+    transition: 1s;
+    width: 35%;
+}
+/* podval */
+footer{
+    padding: 4vw;
+}
+.icon{
+    width: 2.5vw;
+}
+@media (max-width: 580px){
+.icon{
+    width: 4vw;
+}
+  }
